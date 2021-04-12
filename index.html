@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo"><img src='images/logo.svg' alt='Logo' /></a>
+                <ul class="nav">
+                    <li class="nav-item nav-item--active" onclick="navItemClicked(0)"><a href="#">ICO</a></li>
+                    <li class="nav-item" ><a href="#team" onclick="navItemClicked(1)">Team</a></li>
+                    <li class="nav-item"><a href="#contact-us" onclick="navItemClicked(2)">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="intro-section">
+        <div class="intro-inner">
+            <div class="intro-info-block">
+                <h1 class="intro-heading">The first fully-automatic social crypto trading platform with real crypto currency</h1>
+                <p class="intro-text">Subscribe and get the latest information</p>
+                <div class="intro-input">
+                    <input placeholder="Enter your email" />
+                    <button class="btn intro-input-btn">Subscribe</button>
+                </div> 
+            </div>
+            <div class="intro-video-block">
+                <img src='images/video_preview.png' alt='video preview' />
+                <button class="play-video-btn"></button>
+            </div>
+            <div id="modalVideoPlayer" class="modal">
+                <div class="video-player">
+                    <button class="close-player-btn"></button>
+                    <video controls>
+                        <source src="https://www.sample-videos.com/video123/mp4/720/big_buck_bunny_720p_20mb.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <button class="arrow-btn"><span class="arrow"></span></button>
+        <aside class="social-aside">
+            <ul>
+                <li class="social-aside-item"><a href="#" target="_blank" class="twitter"></a></li>
+                <li class="social-aside-item"><a href="#" target="_blank" class="facebook"></a></li>
+            </ul>
+        </aside>
+        <div class="intro-bg"></div>
+    </section>
+    <div class="intro-video-block small-screen-video">
+        <img src='images/video_preview.png' alt='video preview' />
+        <button class="play-video-btn"></button>
+    </div>
+    <section class="team-section" id="team">
+        <div class="container">
+            <h2 class="section-heading">Team</h2>
+            <div class='swiper-container'>
+            <div class="team-members" id="members-wrapper">
+                <div class="team-member-block" onclick="memberClicked(0)">
+                    <img src="images/edgar.png" alt='Team member photo' class="team-member-photo" />
+                    <p class="team-member-name">Edgar Morrison</p>
+                    <p class="team-member-position">CEO</p>
+                    <p class="team-member-about">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                    <div class="team-member-social">
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 16" id="i-facebook" width="7" height="13">
+                                <path d="M8.562.393V2.75H7.161c-1.099 0-1.304.527-1.304 1.286v1.688h2.616l-.348 2.642H5.857v6.777H3.125V8.366H.848V5.724h2.277V3.777c0-2.259 1.384-3.491 3.402-3.491.964 0 1.794.071 2.035.107z"></path>
+                            </svg>
+                        </a>
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 15" id="i-linkedin" width="12" height="12">
+                                <path fill-rule="evenodd" d="M4.066 4.874V15H.694V4.874h3.372zm.215-3.127c.01.971-.726 1.748-1.9 1.748H2.36C1.225 3.495.5 2.718.5 1.747.5.757 1.256 0 2.4 0c1.155 0 1.87.756 1.88 1.747zm5.006 4.566c.444-.693 1.244-1.674 3.035-1.674 2.218 0 3.873 1.45 3.873 4.557V15h-3.362V9.584c0-1.359-.49-2.288-1.706-2.288-.93 0-1.482.623-1.727 1.226-.082.225-.113.52-.113.827V15H5.926c.04-9.176 0-10.126 0-10.126h3.361v1.44z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member-block" onclick="memberClicked(1)">
+                    <img src="images/mae.png" alt='Team member photo' class="team-member-photo" />
+                    <p class="team-member-name">Mae Martin</p>
+                    <p class="team-member-position">CTO</p>
+                    <p class="team-member-about">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                    <div class="team-member-social">
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 16" id="i-facebook" width="7" height="13">
+                                <path d="M8.562.393V2.75H7.161c-1.099 0-1.304.527-1.304 1.286v1.688h2.616l-.348 2.642H5.857v6.777H3.125V8.366H.848V5.724h2.277V3.777c0-2.259 1.384-3.491 3.402-3.491.964 0 1.794.071 2.035.107z"></path>
+                            </svg>
+                        </a>
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 15" id="i-linkedin" width="12" height="12">
+                                <path fill-rule="evenodd" d="M4.066 4.874V15H.694V4.874h3.372zm.215-3.127c.01.971-.726 1.748-1.9 1.748H2.36C1.225 3.495.5 2.718.5 1.747.5.757 1.256 0 2.4 0c1.155 0 1.87.756 1.88 1.747zm5.006 4.566c.444-.693 1.244-1.674 3.035-1.674 2.218 0 3.873 1.45 3.873 4.557V15h-3.362V9.584c0-1.359-.49-2.288-1.706-2.288-.93 0-1.482.623-1.727 1.226-.082.225-.113.52-.113.827V15H5.926c.04-9.176 0-10.126 0-10.126h3.361v1.44z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member-block" onclick="memberClicked(2)">
+                    <img src="images/david.png" alt='Team member photo' class="team-member-photo" />
+                    <p class="team-member-name">David Banks</p>
+                    <p class="team-member-position">CFO</p>
+                    <p class="team-member-about">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                    <div class="team-member-social">
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 16" id="i-facebook" width="7" height="13">
+                                <path d="M8.562.393V2.75H7.161c-1.099 0-1.304.527-1.304 1.286v1.688h2.616l-.348 2.642H5.857v6.777H3.125V8.366H.848V5.724h2.277V3.777c0-2.259 1.384-3.491 3.402-3.491.964 0 1.794.071 2.035.107z"></path>
+                            </svg>
+                        </a>
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 15" id="i-linkedin" width="12" height="12">
+                                <path fill-rule="evenodd" d="M4.066 4.874V15H.694V4.874h3.372zm.215-3.127c.01.971-.726 1.748-1.9 1.748H2.36C1.225 3.495.5 2.718.5 1.747.5.757 1.256 0 2.4 0c1.155 0 1.87.756 1.88 1.747zm5.006 4.566c.444-.693 1.244-1.674 3.035-1.674 2.218 0 3.873 1.45 3.873 4.557V15h-3.362V9.584c0-1.359-.49-2.288-1.706-2.288-.93 0-1.482.623-1.727 1.226-.082.225-.113.52-.113.827V15H5.926c.04-9.176 0-10.126 0-10.126h3.361v1.44z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="team-member-block" onclick="memberClicked(3)">
+                    <img src="images/frederick.png" alt='Team member photo' class="team-member-photo" />
+                    <p class="team-member-name">Frederick Parsons</p>
+                    <p class="team-member-position">COO</p>
+                    <p class="team-member-about">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                    <div class="team-member-social">
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 9 16" id="i-facebook" width="7" height="13">
+                                <path d="M8.562.393V2.75H7.161c-1.099 0-1.304.527-1.304 1.286v1.688h2.616l-.348 2.642H5.857v6.777H3.125V8.366H.848V5.724h2.277V3.777c0-2.259 1.384-3.491 3.402-3.491.964 0 1.794.071 2.035.107z"></path>
+                            </svg>
+                        </a>
+                        <a class="team-member-social-link" href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 17 15" id="i-linkedin" width="12" height="12">
+                                <path fill-rule="evenodd" d="M4.066 4.874V15H.694V4.874h3.372zm.215-3.127c.01.971-.726 1.748-1.9 1.748H2.36C1.225 3.495.5 2.718.5 1.747.5.757 1.256 0 2.4 0c1.155 0 1.87.756 1.88 1.747zm5.006 4.566c.444-.693 1.244-1.674 3.035-1.674 2.218 0 3.873 1.45 3.873 4.557V15h-3.362V9.584c0-1.359-.49-2.288-1.706-2.288-.93 0-1.482.623-1.727 1.226-.082.225-.113.52-.113.827V15H5.926c.04-9.176 0-10.126 0-10.126h3.361v1.44z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn"></span>
+                <p id="modal-content-name">Edgar Morrison</p>
+                <p id="modal-content-position">CEO</p>
+                <p id="modal-content-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="contact-us-section" id="contact-us">
+        <h2 class="section-heading">Contact Us</h2>
+        <p class="contact-us-text">Most calendars are designed for teams. Slate is designed for freelancers</p>
+        <form class="contact-us-form">
+            <input placeholder="Your Name" class="contact-us-form-input" />
+            <input placeholder="Your Email" class="contact-us-form-input" />
+            <label class="checkbox-input">
+                Checkbox
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <button class="btn contact-us-btn">Send</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-header">
+                <a href="#" class="logo"><img src='images/logo.svg' alt='Logo' /></a>
+                <div class="footer-header-contact-info">
+                    <p>Contact us:</p>
+                    <a href="mailto:have@nicecoding.io">have@nicecoding.io</a>
+                </div>
+                <button class="btn footer-btn">Read Whitepaper</button>
+            </div>
+            <ul class="footer-nav">
+                <li class="footer-nav-item"><a href="#">&#169; Copywriters 2021</a></li>
+                <li class="footer-nav-item"><a href="#">FAQ</a></li>
+                <li class="footer-nav-item"><a href="#">Terms of Use</a></li>
+                <li class="footer-nav-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script src="js.js"></script>
+
+</html>
